@@ -329,7 +329,7 @@
               
                 
                 <a class="post-title-link" href="/2016/07/29/test/" itemprop="url">
-                  test
+                  运行hexo报错解决方案
                 </a>
               
             
@@ -372,7 +372,25 @@
       
         
           
-            <p>测试用的</p>
+            <h2 id="gt-（1）FATAL-Permission-denied-publickey"><a href="#gt-（1）FATAL-Permission-denied-publickey" class="headerlink" title="&gt;（1）FATAL Permission denied (publickey)"></a>&gt;（1）FATAL Permission denied (publickey)</h2><p>原因：未配置git<br>解决方式：</p>
+<p>先运行</p>
+<p><code>1 npm install hexo-deployer-git --save</code></p>
+<p>再修改_config.yml:</p>
+<blockquote>
+<p>1 type: git<br>2 repository: git@name.github.com:name/name.github.io.git<br>3 branch: master</p>
+</blockquote>
+<p>(2) ssh: connect to host github.com port 22: Operation timed out<br>fatal: Could not read from remote repository.</p>
+<p>原因：ssh连接方式失效</p>
+<p>解决方式：换成https连接方式</p>
+<p>将_config.yml中的</p>
+<blockquote>
+<p>1 repository: git@name.github.com:name/name.github.io.git</p>
+</blockquote>
+<p>修改为：</p>
+<blockquote>
+<p>1 <a href="https://github.com/name/name.github.io.git" target="_blank" rel="external">https://github.com/name/name.github.io.git</a></p>
+</blockquote>
+<p>name指的是你github账号</p>
 
           
         
