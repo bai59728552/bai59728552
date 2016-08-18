@@ -84,12 +84,28 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="1.把javascript放到页面代码的底部，这样就可以确保在html元素创建之后再执行脚本2.从javascript访问html元素，可以使用document.getElementById(“id”)
+#变量计算中加（ ）的优先计算
+123result ++ ; //(让result等于result＋1)result -- ; //(让result等于result-1)
+#判断
+12345doc">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript手记">
+<meta property="og:url" content="http://yoursite.com/2016/08/18/javascript手记/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.把javascript放到页面代码的底部，这样就可以确保在html元素创建之后再执行脚本2.从javascript访问html元素，可以使用document.getElementById(“id”)
+#变量计算中加（ ）的优先计算
+123result ++ ; //(让result等于result＋1)result -- ; //(让result等于result-1)
+#判断
+12345doc">
+<meta property="og:updated_time" content="2016-08-18T10:29:25.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="javascript手记">
+<meta name="twitter:description" content="1.把javascript放到页面代码的底部，这样就可以确保在html元素创建之后再执行脚本2.从javascript访问html元素，可以使用document.getElementById(“id”)
+#变量计算中加（ ）的优先计算
+123result ++ ; //(让result等于result＋1)result -- ; //(让result等于result-1)
+#判断
+12345doc">
 
 
 
@@ -110,9 +126,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/08/18/javascript手记/"/>
 
-  <title> Hexo </title>
+  <title> javascript手记 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -133,9 +149,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -212,9 +226,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -234,10 +248,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/08/18/javascript手记/" itemprop="url">
-                  javascript手记
-                </a>
+                javascript手记
               
             
           </h1>
@@ -277,9 +288,7 @@
       
 
       
-        
-          
-            <p>1.把javascript放到页面代码的底部，这样就可以确保在html元素创建之后再执行脚本<br>2.从javascript访问html元素，可以使用<font color="#ff741f">document.getElementById(“id”)</font></p>
+        <p>1.把javascript放到页面代码的底部，这样就可以确保在html元素创建之后再执行脚本<br>2.从javascript访问html元素，可以使用<font color="#ff741f">document.getElementById(“id”)</font></p>
 <p>#变量计算中加（ ）的优先计算</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">result ++ ; <span class="comment">//(让result等于result＋1)</span></div><div class="line">result -- ; <span class="comment">//(让result等于result-1)</span></div></pre></td></tr></table></figure>
 <p>#判断</p>
@@ -295,16 +304,20 @@
 <p>相当于</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">var</span> t = <span class="number">2</span>;</div><div class="line"><span class="keyword">switch</span>( t )</div><div class="line">&#123;</div><div class="line">    <span class="keyword">case</span> <span class="number">1</span>:</div><div class="line">         alert(<span class="string">"你好"</span>);</div><div class="line">         <span class="keyword">break</span>;</div><div class="line">    <span class="keyword">case</span> <span class="number">2</span>:</div><div class="line">         alert(<span class="string">"早上好"</span>);</div><div class="line">         <span class="keyword">break</span>;</div><div class="line">    <span class="keyword">case</span> <span class="number">3</span>:</div><div class="line">         alert(<span class="string">"晚上好"</span>);</div><div class="line">         <span class="keyword">break</span>;</div><div class="line">    <span class="keyword">case</span> <span class="number">4</span>:</div><div class="line">         alert(<span class="string">"再见"</span>);</div><div class="line">         <span class="keyword">break</span>;</div><div class="line">    <span class="keyword">default</span>:</div><div class="line">         alert(<span class="string">"啊，什么啊？"</span>);                   </div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -312,354 +325,32 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/07/29/test/" rel="next" title="运行hexo报错解决方案">
+                <i class="fa fa-chevron-left"></i> 运行hexo报错解决方案
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/07/29/test/" itemprop="url">
-                  运行hexo报错解决方案
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
-            <time itemprop="dateCreated" datetime="2016-07-29T18:39:31+08:00" content="2016-07-29">
-              2016-07-29
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>（1）FATAL Permission denied (publickey)</strong></p>
-<p>原因：未配置git<br>解决方式：</p>
-<p>先运行</p>
-<pre><code>1 npm install hexo-deployer-git --save
-</code></pre><p>再修改<font color="#e9967a">_config.yml:</font></p>
-<pre><code>1 type: git
-2 repository: git@name.github.com:name/name.github.io.git
-3 branch: master
-</code></pre><p><strong>(2) ssh: connect to host github.com port 22: Operation timed out</strong><br><strong>fatal: Could not read from remote repository.</strong></p>
-<p>原因：ssh连接方式失效</p>
-<p>解决方式：换成https连接方式</p>
-<p>将<font color="#e9967a">_config.yml</font>中的</p>
-<pre><code>1 repository: git@name.github.com:name/name.github.io.git
-</code></pre><p>修改为：</p>
-<pre><code>1 https://github.com/name/name.github.io.git
-</code></pre><p>name指的是你github账号</p>
-<p><strong>git lab因本地未同步，出现提交不成功</strong></p>
-<p>按照提示先 <font color="#e9967a">git pull</font>到本地同步，<font color="#e9967a">shift+z</font>让系统自动合并文件，然后按照正常流程提交。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/29/苹果软件推荐/" itemprop="url">
-                  苹果软件推荐
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
-            <time itemprop="dateCreated" datetime="2016-07-29T18:00:15+08:00" content="2016-07-29">
-              2016-07-29
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="Awesome-Mac"><a href="#Awesome-Mac" class="headerlink" title="Awesome Mac"></a>Awesome Mac</h1><p><a href="https://github.com/jaywcjlove/awesome-mac"><img src="https://jaywcjlove.github.io/sb/ico/awesome.svg" alt="jaywcjlove/sb"></a></p>
-<p> 这个仓库主要是收集非常好用的Mac应用程序、软件以及工具，主要面向开发者和设计师。有这个想法是因为我最近发了一篇较为火爆的涨粉儿微信公众号文章《<a href="http://mp.weixin.qq.com/s?__biz=MzAwNzgxMjYzMA==&amp;mid=2649129466&amp;idx=1&amp;sn=e50f0049b096cf28b7cf707a4b5adb33#rd">工具武装的前端开发工程师</a>》，于是建了这么一个仓库，持续更新作为补充，搜集更多好用的软件工具。请Star、Pull Request或者使劲搓它 <a href="https://github.com/jaywcjlove/awesome-mac/issues">issues</a> 给我推荐优秀好用的Mac应用，很显然我是一个资深Mac用户，我需要它们帮助我快乐、高效的工作，同时也分享给你。格式参照<a href="https://github.com/sindresorhus/awesome">awesome</a>的清单。</p>
-<blockquote>
-<p>在这里非常感谢 <a href="http://weibo.com/GitHubDaily">@GitHubDaily</a> 的推荐</p>
-</blockquote>
-<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p><a href="README.md">中文</a> | <a href="README-en.md">English</a>  </p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
-<li><a href="#编辑器">编辑器</a></li>
-<li><a href="#开发者工具">开发者工具</a></li>
-<li><a href="#测试工具">测试工具</a></li>
-<li><a href="#命令行工具">命令行工具</a></li>
-<li><a href="#版本控制">版本控制</a></li>
-<li><a href="#数据库">数据库</a></li>
-<li><a href="#设计和产品">设计和产品</a></li>
-<li><a href="#虚拟机">虚拟机</a></li>
-<li><a href="#通信">通信</a></li>
-<li><a href="#数据恢复">数据恢复</a></li>
-<li><a href="#音频和视频">音频和视频</a></li>
-<li><a href="#书签阅读写作">书签阅读写作</a></li>
-<li><a href="#ftp客户端">FTP客户端</a></li>
-<li><a href="#软件打包工具">软件打包工具</a></li>
-<li><a href="#制作电子书">制作电子书</a></li>
-<li><a href="#下载工具">下载工具</a></li>
-<li><a href="#网盘">网盘</a></li>
-<li><a href="#输入法">输入法</a></li>
-<li><a href="#浏览器">浏览器</a></li>
-<li><a href="#翻译工具">翻译工具</a></li>
-<li><a href="#科学上网">科学上网</a></li>
-<li><a href="#其它实用工具">其它实用工具</a></li>
-<li><a href="#远程协助">远程协助</a></li>
-<li><a href="#第三方应用市场app">第三方应用市场APP</a></li>
-<li><a href="#Mac软件下载网站">Mac软件下载网站</a></li>
-</ul>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/07/29/苹果软件推荐/#more" rel="contents">
-              Weiterlesen &raquo;
-            </a>
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+          <div class="post-nav-prev post-nav-item">
             
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/29/博客搭建学习/" itemprop="url">
-                  博客搭建学习
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
-            <time itemprop="dateCreated" datetime="2016-07-29T17:57:32+08:00" content="2016-07-29">
-              2016-07-29
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="markdown标题语法"><a href="#markdown标题语法" class="headerlink" title="markdown标题语法"></a>markdown标题语法</h1><h2 id="setext"><a href="#setext" class="headerlink" title="setext"></a>setext</h2><p>setext是以<em>底线</em>的形式，用=（最高标题h1）和-（第二标题h2）在标题内容的下方书写</p>
-<h2 id="Atx"><a href="#Atx" class="headerlink" title="Atx"></a>Atx</h2><p>Atx是在<em>行首</em>插入1到6个#，分别对应h1-h6</p>
-<h2 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h2><p>区块使用 <em>&gt;</em>,对应<em>blockquote标签</em>，需在每一样行包括空行的行首插入，即开始、结束</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -667,6 +358,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -686,8 +381,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -730,6 +434,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">Dieser Artikel hat kein Inhaltsverzeichnis</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -826,6 +541,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
