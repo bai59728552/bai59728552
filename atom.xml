@@ -1,4 +1,133 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 苹果软件推荐 · Hexo</title><meta name="description" content="苹果软件推荐 - John Doe"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="Hexo"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a target="_self" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/bai59728552" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">苹果软件推荐</h1><div class="post-info">Jul 29, 2016</div><div class="post-content"><h1 id="Awesome-Mac"><a href="#Awesome-Mac" class="headerlink" title="Awesome Mac"></a>Awesome Mac</h1><p><a href="https://github.com/jaywcjlove/awesome-mac" target="_blank" rel="external"><img src="https://jaywcjlove.github.io/sb/ico/awesome.svg" alt="jaywcjlove/sb"></a></p>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2016-08-19T05:42:42.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>javascript手记</title>
+    <link href="http://yoursite.com/2016/08/18/javascript%E6%89%8B%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/08/18/javascript手记/</id>
+    <published>2016-08-18T09:10:51.000Z</published>
+    <updated>2016-08-19T05:42:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.把javascript放到页面代码的底部，这样就可以确保在html元素创建之后再执行脚本<br>2.从javascript访问html元素，可以使用<font color="#ff741f">document.getElementById(“id”)</font></p>
+<p>#变量</p>
+<p>1.与代数一样，JavaScript 变量可用于存放值（比如 x=2）和表达式（比如 z=x+y）。<br>2.变量可以使用短名称（比如 x 和 y），也可以使用描述性更好的名称（比如 age, sum, totalvolume）。<br>3.变量必须以字母开头<br>4.变量也能以 $ 和 _ 符号开头（不过我们不推荐这么做）<br>5.变量名称对大小写敏感（y 和 Y 是不同的变量）</p>
+<p><font color="#ff741f">提示</font>：JavaScript 语句和 JavaScript 变量都对大小写敏感。</p>
+<p>#JavaScript 数据类型</p>
+<p>JavaScript 变量还能保存其他数据类型，比如文本值 (name=”Bill Gates”)。<br>在 JavaScript 中，类似 “Bill Gates” 这样一条文本被称为字符串。<br>JavaScript 变量有很多种类型，但是现在，我们只关注数字和字符串。<br>当您向变量分配文本值时，应该用双引号或单引号包围这个值。<br>当您向变量赋的值是数值时，不要使用引号。如果您用引号包围数值，该值会被作为文本来处理。</p>
+<p>#声明（创建） JavaScript 变量</p>
+<p>在 JavaScript 中创建变量通常称为“声明”变量。</p>
+<p>我们使用 var 关键词来声明变量：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> carname;</div></pre></td></tr></table></figure></p>
+<p>变量声明之后，该变量是空的（它没有值）。</p>
+<p>如需向变量赋值，请使用等号：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">carname=<span class="string">"Volvo"</span>;</div></pre></td></tr></table></figure></p>
+<p>不过，您也可以在声明变量时对其赋值：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> carname=<span class="string">"Volvo"</span>;</div></pre></td></tr></table></figure></p>
+<p>例子<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> pi=<span class="number">3.14</span>;</div><div class="line"><span class="keyword">var</span> name=<span class="string">"Bill Gates"</span>;</div><div class="line"><span class="keyword">var</span> answer=<span class="string">'Yes I am!'</span>;</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>#一条语句，多个变量</p>
+<p>您可以在一条语句中声明很多变量。该语句以 var 开头，并使用逗号分隔变量即可：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> name=<span class="string">"Gates"</span>, age=<span class="number">56</span>, job=<span class="string">"CEO"</span>;</div></pre></td></tr></table></figure></p>
+<p>声明也可横跨多行：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> name=<span class="string">"Gates"</span>,</div><div class="line">age=<span class="number">56</span>,</div><div class="line">job=<span class="string">"CEO"</span>;</div></pre></td></tr></table></figure></p>
+<p>Value = undefined</p>
+<p>在计算机程序中，经常会声明无值的变量。未使用值来声明的变量，其值实际上是 undefined。<br>在执行过以下语句后，变量 carname 的值将是 undefined：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> carname;</div></pre></td></tr></table></figure></p>
+<p>#重新声明 JavaScript 变量</p>
+<p>如果重新声明 JavaScript 变量，该变量的值不会丢失：</p>
+<p>在以下两条语句执行后，变量 carname 的值依然是 “Volvo”：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> carname=<span class="string">"Volvo"</span>;</div><div class="line"><span class="keyword">var</span> carname;</div></pre></td></tr></table></figure></p>
+<p>#变量计算中加（ ）的优先计算</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">result ++ ; <span class="comment">//(让result等于result＋1)</span></div><div class="line">result -- ; <span class="comment">//(让result等于result-1)</span></div></pre></td></tr></table></figure>
+<p>#判断</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="built_in">document</span>.write (age1 == age2); <span class="comment">//判断这两个变量值是否相等</span></div><div class="line"><span class="built_in">document</span>.write (age1 != age2); <span class="comment">//判断这两个变量值是否不相等</span></div><div class="line"><span class="built_in">document</span>.write (age1 &gt; age2); <span class="comment">//判断变量age1是否大于age2</span></div><div class="line"><span class="built_in">document</span>.write (age1 &lt;= age2); <span class="comment">//判断变量age1是否小于等于age2</span></div></pre></td></tr></table></figure>
+<p><strong>if else表达式</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">if</span>(表达式)</div><div class="line">&#123;</div><div class="line">    <span class="comment">//如果表达式结果为true，执行这里的语句</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">else</span></div><div class="line">&#123;</div><div class="line">    <span class="comment">//如果表达式结果为false，执行这里的语句</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>例子：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">var</span> = <span class="number">20</span></div><div class="line"><span class="keyword">if</span> (age &gt; <span class="number">18</span>)</div><div class="line">&#123;</div><div class="line">    alert(<span class="string">"成年啦"</span>); <span class="comment">//如果为true执行</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">else</span></div><div class="line">&#123;</div><div class="line">    alert(<span class="string">"还小啦"</span>); <span class="comment">//如果为false执行</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>if else能同时嵌套做多重的判断</strong><br>    1.在if和else后面永远放一对{}<br>    2.哪怕后面只有一句语句</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">var</span> pass = <span class="number">60</span>;</div><div class="line"><span class="keyword">var</span> score = <span class="number">59</span>;</div><div class="line"></div><div class="line"><span class="keyword">if</span> (score &lt; pass)</div><div class="line">&#123;</div><div class="line">    alert(<span class="string">"很遗憾，这个成绩没有及格"</span>)  <span class="comment">//如果为true执行</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">else</span></div><div class="line">&#123;</div><div class="line">    alert(<span class="string">"祝贺你，及格了"</span>)  <span class="comment">//如果为false执行</span></div><div class="line">&#125;</div><div class="line">alert(<span class="string">"再见，继续努力"</span>)  <span class="comment">//执行完if和else后执行</span></div></pre></td></tr></table></figure>
+<p><strong>switch-case</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">if</span>(type ＝ <span class="number">1</span>)；</div><div class="line">  alert(<span class="string">"你好"</span>);</div><div class="line"><span class="keyword">else</span> <span class="keyword">if</span>(type = <span class="number">2</span>);</div><div class="line">  alert(<span class="string">"早上好"</span>);</div><div class="line"><span class="keyword">else</span> <span class="keyword">if</span>(type = <span class="number">3</span>);</div><div class="line">  alert(<span class="string">"晚上好"</span>);</div><div class="line"><span class="keyword">else</span> <span class="keyword">if</span>(type = <span class="number">4</span>);</div><div class="line">  alert(<span class="string">"再见"</span>);</div><div class="line"><span class="keyword">else</span> </div><div class="line">  alert(<span class="string">"早上好"</span>);</div></pre></td></tr></table></figure>
+<p>相当于</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">var</span> t = <span class="number">2</span>;</div><div class="line"><span class="keyword">switch</span>( t )</div><div class="line">&#123;</div><div class="line">    <span class="keyword">case</span> <span class="number">1</span>:</div><div class="line">         alert(<span class="string">"你好"</span>);</div><div class="line">         <span class="keyword">break</span>;</div><div class="line">    <span class="keyword">case</span> <span class="number">2</span>:</div><div class="line">         alert(<span class="string">"早上好"</span>);</div><div class="line">         <span class="keyword">break</span>;</div><div class="line">    <span class="keyword">case</span> <span class="number">3</span>:</div><div class="line">         alert(<span class="string">"晚上好"</span>);</div><div class="line">         <span class="keyword">break</span>;</div><div class="line">    <span class="keyword">case</span> <span class="number">4</span>:</div><div class="line">         alert(<span class="string">"再见"</span>);</div><div class="line">         <span class="keyword">break</span>;</div><div class="line">    <span class="keyword">default</span>:</div><div class="line">         alert(<span class="string">"啊，什么啊？"</span>);                   </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1.把javascript放到页面代码的底部，这样就可以确保在html元素创建之后再执行脚本&lt;br&gt;2.从javascript访问html元素，可以使用&lt;font color=&quot;#ff741f&quot;&gt;document.getElementById(“id”)&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;#变量&lt;/p&gt;
+&lt;p&gt;1.与代数一样，JavaScript 变量可用于存放值（比如 x=2）和表达式（比如 z=x+y）。&lt;br&gt;2.变量可以使用短名称（比如 x 和 y），也可以使用描述性更好的名称（比如 age, sum, totalvolume）。&lt;br&gt;3.变量必须以字母开头&lt;br&gt;4.变量也能以 $ 和 _ 符号开头（不过我们不推荐这么做）&lt;br&gt;5.变量名称对大小写敏感（y 和 Y 是不同的变量）&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;#ff741f&quot;&gt;提示&lt;/font&gt;：JavaScript 语句和 JavaScript 变量都对大小写敏感。&lt;/p&gt;
+&lt;p&gt;#JavaScript 数据类型&lt;/p&gt;
+&lt;p&gt;JavaScript 变量还能保存其他数据类型，比如文本值 (name=”Bill Gates”)。&lt;br&gt;在 JavaScript 中，类似 “Bill Gates” 这样一条文本被称为字符串。&lt;br&gt;JavaScript 变量有很多种类型，但是现在，我们只关注数字和字符串。&lt;br&gt;当您向变量分配文本值时，应该用双引号或单引号包围这个值。&lt;br&gt;当您向变量赋的值是数值时，不要使用引号。如果您用引号包围数值，该值会被作为文本来处理。&lt;/p&gt;
+&lt;p&gt;#声明（创建） JavaScript 变量&lt;/p&gt;
+&lt;p&gt;在 JavaScript 中创建变量通常称为“声明”变量。&lt;/p&gt;
+&lt;p&gt;我们使用 var 关键词来声明变量：&lt;br&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; carname;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;变量声明之后，该变量是空的（它没有值）。&lt;/p&gt;
+&lt;p&gt;如需向变量赋值，请使用等号：&lt;br&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;carname=&lt;span class=&quot;string&quot;&gt;&quot;Volvo&quot;&lt;/span&gt;;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;不过，您也可以在声明变量时对其赋值：&lt;br&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; carname=&lt;span class=&quot;string&quot;&gt;&quot;Volvo&quot;&lt;/span&gt;;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;例子&lt;br&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; pi=&lt;span class=&quot;number&quot;&gt;3.14&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; name=&lt;span class=&quot;string&quot;&gt;&quot;Bill Gates&quot;&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; answer=&lt;span class=&quot;string&quot;&gt;&#39;Yes I am!&#39;&lt;/span&gt;;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>运行hexo报错解决方案</title>
+    <link href="http://yoursite.com/2016/07/29/test/"/>
+    <id>http://yoursite.com/2016/07/29/test/</id>
+    <published>2016-07-29T10:39:31.000Z</published>
+    <updated>2016-08-16T07:35:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>（1）FATAL Permission denied (publickey)</strong></p>
+<p>原因：未配置git<br>解决方式：</p>
+<p>先运行</p>
+<pre><code>1 npm install hexo-deployer-git --save
+</code></pre><p>再修改<font color="#e9967a">_config.yml:</font></p>
+<pre><code>1 type: git
+2 repository: git@name.github.com:name/name.github.io.git
+3 branch: master
+</code></pre><p><strong>(2) ssh: connect to host github.com port 22: Operation timed out</strong><br><strong>fatal: Could not read from remote repository.</strong></p>
+<p>原因：ssh连接方式失效</p>
+<p>解决方式：换成https连接方式</p>
+<p>将<font color="#e9967a">_config.yml</font>中的</p>
+<pre><code>1 repository: git@name.github.com:name/name.github.io.git
+</code></pre><p>修改为：</p>
+<pre><code>1 https://github.com/name/name.github.io.git
+</code></pre><p>name指的是你github账号</p>
+<p><strong>git lab因本地未同步，出现提交不成功</strong></p>
+<p>按照提示先 <font color="#e9967a">git pull</font>到本地同步，<font color="#e9967a">shift+z</font>让系统自动合并文件，然后按照正常流程提交。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;（1）FATAL Permission denied (publickey)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;原因：未配置git&lt;br&gt;解决方式：&lt;/p&gt;
+&lt;p&gt;先运行&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1 npm install hexo-deployer-g
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>苹果软件推荐</title>
+    <link href="http://yoursite.com/2016/07/29/%E8%8B%B9%E6%9E%9C%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    <id>http://yoursite.com/2016/07/29/苹果软件推荐/</id>
+    <published>2016-07-29T10:00:15.000Z</published>
+    <updated>2016-08-07T16:15:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Awesome-Mac"><a href="#Awesome-Mac" class="headerlink" title="Awesome Mac"></a>Awesome Mac</h1><p><a href="https://github.com/jaywcjlove/awesome-mac" target="_blank" rel="external"><img src="https://jaywcjlove.github.io/sb/ico/awesome.svg" alt="jaywcjlove/sb"></a></p>
 <p> 这个仓库主要是收集非常好用的Mac应用程序、软件以及工具，主要面向开发者和设计师。有这个想法是因为我最近发了一篇较为火爆的涨粉儿微信公众号文章《<a href="http://mp.weixin.qq.com/s?__biz=MzAwNzgxMjYzMA==&amp;mid=2649129466&amp;idx=1&amp;sn=e50f0049b096cf28b7cf707a4b5adb33#rd" target="_blank" rel="external">工具武装的前端开发工程师</a>》，于是建了这么一个仓库，持续更新作为补充，搜集更多好用的软件工具。请Star、Pull Request或者使劲搓它 <a href="https://github.com/jaywcjlove/awesome-mac/issues" target="_blank" rel="external">issues</a> 给我推荐优秀好用的Mac应用，很显然我是一个资深Mac用户，我需要它们帮助我快乐、高效的工作，同时也分享给你。格式参照<a href="https://github.com/sindresorhus/awesome" target="_blank" rel="external">awesome</a>的清单。</p>
 <blockquote>
 <p>在这里非常感谢 <a href="http://weibo.com/GitHubDaily" target="_blank" rel="external">@GitHubDaily</a> 的推荐</p>
@@ -496,4 +625,70 @@
 <li>腾牛网：<del><code>http://www.qqtn.com/mac/r_17_1.html</code></del></li>
 </ul>
 <p><strong><a href="#目录">⬆ 返回顶部</a></strong></p>
-</div></article></div></section><footer><div class="paginator"><a href="/2016/07/29/test/" class="prev">PREV</a><a href="/2016/07/29/博客搭建学习/" class="next">NEXT</a></div><div class="copyright"><p>© 2015 - 2016 <a href="http://yoursite.com">John Doe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Awesome-Mac&quot;&gt;&lt;a href=&quot;#Awesome-Mac&quot; class=&quot;headerlink&quot; title=&quot;Awesome Mac&quot;&gt;&lt;/a&gt;Awesome Mac&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/jaywcjlove/awesome-mac&quot;&gt;&lt;img src=&quot;https://jaywcjlove.github.io/sb/ico/awesome.svg&quot; alt=&quot;jaywcjlove/sb&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; 这个仓库主要是收集非常好用的Mac应用程序、软件以及工具，主要面向开发者和设计师。有这个想法是因为我最近发了一篇较为火爆的涨粉儿微信公众号文章《&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MzAwNzgxMjYzMA==&amp;amp;mid=2649129466&amp;amp;idx=1&amp;amp;sn=e50f0049b096cf28b7cf707a4b5adb33#rd&quot;&gt;工具武装的前端开发工程师&lt;/a&gt;》，于是建了这么一个仓库，持续更新作为补充，搜集更多好用的软件工具。请Star、Pull Request或者使劲搓它 &lt;a href=&quot;https://github.com/jaywcjlove/awesome-mac/issues&quot;&gt;issues&lt;/a&gt; 给我推荐优秀好用的Mac应用，很显然我是一个资深Mac用户，我需要它们帮助我快乐、高效的工作，同时也分享给你。格式参照&lt;a href=&quot;https://github.com/sindresorhus/awesome&quot;&gt;awesome&lt;/a&gt;的清单。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在这里非常感谢 &lt;a href=&quot;http://weibo.com/GitHubDaily&quot;&gt;@GitHubDaily&lt;/a&gt; 的推荐&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;README.md&quot;&gt;中文&lt;/a&gt; | &lt;a href=&quot;README-en.md&quot;&gt;English&lt;/a&gt;  &lt;/p&gt;
+&lt;h2 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot; title=&quot;目录&quot;&gt;&lt;/a&gt;目录&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#编辑器&quot;&gt;编辑器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#开发者工具&quot;&gt;开发者工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#测试工具&quot;&gt;测试工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#命令行工具&quot;&gt;命令行工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#版本控制&quot;&gt;版本控制&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#数据库&quot;&gt;数据库&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#设计和产品&quot;&gt;设计和产品&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#虚拟机&quot;&gt;虚拟机&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#通信&quot;&gt;通信&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#数据恢复&quot;&gt;数据恢复&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#音频和视频&quot;&gt;音频和视频&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#书签阅读写作&quot;&gt;书签阅读写作&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#ftp客户端&quot;&gt;FTP客户端&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#软件打包工具&quot;&gt;软件打包工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#制作电子书&quot;&gt;制作电子书&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#下载工具&quot;&gt;下载工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#网盘&quot;&gt;网盘&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#输入法&quot;&gt;输入法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#浏览器&quot;&gt;浏览器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#翻译工具&quot;&gt;翻译工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#科学上网&quot;&gt;科学上网&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#其它实用工具&quot;&gt;其它实用工具&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#远程协助&quot;&gt;远程协助&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#第三方应用市场app&quot;&gt;第三方应用市场APP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#Mac软件下载网站&quot;&gt;Mac软件下载网站&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>博客搭建学习</title>
+    <link href="http://yoursite.com/2016/07/29/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://yoursite.com/2016/07/29/博客搭建学习/</id>
+    <published>2016-07-29T09:57:32.000Z</published>
+    <updated>2016-08-03T12:56:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="markdown标题语法"><a href="#markdown标题语法" class="headerlink" title="markdown标题语法"></a>markdown标题语法</h1><h2 id="setext"><a href="#setext" class="headerlink" title="setext"></a>setext</h2><p>setext是以<em>底线</em>的形式，用=（最高标题h1）和-（第二标题h2）在标题内容的下方书写</p>
+<h2 id="Atx"><a href="#Atx" class="headerlink" title="Atx"></a>Atx</h2><p>Atx是在<em>行首</em>插入1到6个#，分别对应h1-h6</p>
+<h2 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h2><p>区块使用 <em>&gt;</em>,对应<em>blockquote标签</em>，需在每一样行包括空行的行首插入，即开始、结束</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;markdown标题语法&quot;&gt;&lt;a href=&quot;#markdown标题语法&quot; class=&quot;headerlink&quot; title=&quot;markdown标题语法&quot;&gt;&lt;/a&gt;markdown标题语法&lt;/h1&gt;&lt;h2 id=&quot;setext&quot;&gt;&lt;a href=&quot;#setext&quot;
+    
+    </summary>
+    
+    
+      <category term="记录写博客的零散笔记 - 学习 - 博客搭建" scheme="http://yoursite.com/tags/%E8%AE%B0%E5%BD%95%E5%86%99%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%9B%B6%E6%95%A3%E7%AC%94%E8%AE%B0-%E5%AD%A6%E4%B9%A0-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
+  
+</feed>
